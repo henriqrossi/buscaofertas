@@ -1,4 +1,4 @@
-<footer class="page-footer w-100 py-4 fixed-bottom">
+<footer class="page-footer w-100 py-4">
 	<div class="container">
 		<div class="row text-center justify-content-around w-100 m-0">
 			<div class="col-md-12 col-12">			

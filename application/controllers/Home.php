@@ -13,8 +13,15 @@ class Home extends CI_Controller {
 		$this->load->view('home');
 	}
 
-	public function contato()
+	public function busca_produtos()
 	{
-		$this->load->view('contato');
+		$data = $this->input->post();
+		$data['result'] = $this->general_model->buscaTudo($data,$this->input->post('busca'));
+		$this->load->view('resultado',$data);
+	}
+
+	public function sobre()
+	{
+		$this->load->view('sobre');
 	}
 }
